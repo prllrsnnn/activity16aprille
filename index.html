@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <style>
+      /* 1.
+        apply global configs
+      */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+    /* 2. 
+        - apply Segoe UI font for global style 
+    */
+    html, body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+   
+    /* 3.
+        - apply any background images from https://www.pexels.com/ (Note:* choose a landscape type of images)
+        - all text to white
+        - height of the parent container should be 100% in view port height
+        - apply 32 pixels of padding in all sides except top using rem unit
+        - apply a space on top using padding with a value of 15rem using pixels unit.
+        - all text should place to center
+
+    */
+        .main-container {
+          background: url(image/pexels-andy-vu-3244513.jpg) no-repeat center center/cover;
+          color: #fff;
+          height: 100vh;
+          padding: 0 2rem 2rem 2rem;
+          padding-top: 240px;
+          text-align: center;
+        }
+    /* 4.
+        - apply a font size of 3rem in all heading tags
+    */
+    h1, h3 {
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+   
+    /* 5. 
+        - apply a margin of 1rem for top and bottom and 0 to left and right
+    */
+   
+    /* 6. achor tag
+        - button should be displayed inline block
+        - remove underline
+        - apply a white background
+        - apply any color you want on the text
+        - apply a space inside of 0.75rem for top and bottom and 2rem for left and right;
+    
+    */
+        .btn {
+          display: inline-block;
+          text-decoration: none;
+          background-color: #fff;
+          color: rgba(200, 200, 140, 99);
+          padding: 0.75rem 2rem;
+          margin-top: 1rem;
+        }
+    /* 7. section
+    
+        - apply a space in all sides of 2 rem
+    
+    */
+    section {
+      margin: 2rem;
+    }
+
+    /* 8. media queries
+        - inspect the browser and use the mobile inspect tool 
+        - pixel 2 XL, iphone 5 SE, iphone X, ipad,ipad pro
+        - all identified devices above should be configured and use
+        necessary changes on their default css rule for mobile responsiveness
+        - use inline styling for this one
+    
+    */
+
+    @media(min-width: 320px)
+
+  </style>
+</head>
+<body>
+  <div class="main-container">
+  <header>
+    <h1>Welcome To Our Website</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto necessitatibus sunt recusandae a facere totam?</p>
+    <a href="#" class="btn">Find Out More</a>
+  </header>
+
+  <section>
+    <h3>About Our Company</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos repellendus nulla eaque maxime in eveniet aut, cumque reiciendis fugit voluptas saepe distinctio voluptatem excepturi quam rerum tempore debitis possimus? Aliquid adipisci dolorum doloribus voluptate doloremque sed libero dignissimos itaque cumque qui totam, nemo molestiae amet architecto dolore nihil ipsa facilis?</p>
+  </section>
+</div>
+</body>
+</html>
